@@ -1,3 +1,8 @@
+
+
+
+
+
 <!DOCTYPE html>
 <html>
 
@@ -65,12 +70,20 @@
         <form action="/add_guardian" method="post">
             <label>Email:</label>
             <input type="email" name="guardian_email" required class="form-control">
+            <label>Guardian Phone:</label>
+        <input type="" name="guardian_phone" required class="form-control">
             <label>Password:</label>
             <input type="password" name="guardian_password" required class="form-control">
             <br>
             <button type="submit" class="btn btn-success">Add Guardian</button>
         </form>
-
+        <h4>Send message</h4>
+        <form action="/send_message" method="POST">
+            <label for="message">Enter Message:</label>
+            <textarea name="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        
         <br><br>
         <a href="/logout" class="btn btn-danger">Logout</a>
     </div>
